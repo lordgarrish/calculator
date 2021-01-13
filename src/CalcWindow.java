@@ -12,7 +12,7 @@ public final class CalcWindow {
     boolean newClick;
 
 
-    private CalcWindow() {
+    public CalcWindow() {
         mainFrame = new JFrame("Calculator");
         buttonPanel = new JPanel();
         numDisplay = new JLabel(" ");
@@ -139,9 +139,5 @@ public final class CalcWindow {
                 newClick = true;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        new CalcWindow();
     }
 }
